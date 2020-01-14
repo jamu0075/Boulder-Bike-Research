@@ -1,0 +1,189 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Journal Article
+% LaTeX Template
+% Version 1.3 (9/9/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+% PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[twoside]{article}
+
+\usepackage{lipsum} % Package to generate dummy text throughout this template
+
+\usepackage[sc]{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\linespread{1.05} % Line spacing - Palatino needs more space between lines
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+
+\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % Document margins
+\usepackage{multicol} % Used for the two-column layout of the document
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+\usepackage{float} % Required for tables and figures in the multi-column environment - they need to be placed in specific locations with the [H] (e.g. \begin{table}[H])
+\usepackage{hyperref} % For hyperlinks in the PDF
+
+\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+\usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them
+\usepackage{graphicx} % Used for including images
+
+\usepackage{abstract} % Allows abstract customization
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+
+\usepackage{titlesec} % Allows customization of titles
+\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+\renewcommand\thesubsection{\Roman{subsection}} % Roman numerals for subsections
+\renewcommand\thesubsubsection{\Roman{subsubsection}}
+\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
+
+\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{} % Blank out the default header
+\fancyfoot{} % Blank out the default footer
+\fancyhead[C]{CSCI 4830/7000 $\bullet$ Fall 2019 $\bullet$ Jacob Munoz}  % Custom header text
+\fancyfoot[RO,LE]{\thepage} % Custom footer text
+
+% Lorem Ipsum text ala https://hipsum.co/
+
+%----------------------------------------------------------------------------------------
+% TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\title{\vspace{-15mm}\fontsize{24pt}{10pt}\selectfont\textbf{Boulder Bicycle Traffic Forecasting}} % Article title
+
+\author{
+\large
+\textsc{Jacob Munoz} \\% Your name
+\normalsize University of Colorado Boulder \\ % Your institution
+\normalsize \href{mailto:jamu0075@colorado.edu}{jamu0075@colorado.edu} % Your email address
+\vspace{-5mm}
+}
+\date{}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Insert title
+
+\thispagestyle{fancy} % All pages have headers and footers
+
+%----------------------------------------------------------------------------------------
+% ABSTRACT
+%----------------------------------------------------------------------------------------
+
+\begin{abstract}
+
+\noindent Lorem ipsum dolor amet green juice lumbersexual godard listicle mlkshk jean shorts vice subway tile 8-bit shaman swag microdosing XOXO. Neutra biodiesel bespoke irony kinfolk la croix cold-pressed kale chips. Biodiesel 8-bit tbh flannel chia. Direct trade cornhole art party, selfies beard hashtag keytar venmo. Tattooed tbh intelligentsia blue bottle marfa brooklyn. 90's cornhole everyday carry try-hard.
+
+\end{abstract}
+
+%----------------------------------------------------------------------------------------
+% ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+\begin{multicols}{2} % Two-column layout throughout the main article text
+
+\section{Introduction}
+
+Lorem ipsum dolor amet green juice lumbersexual godard listicle mlkshk jean shorts vice subway tile 8-bit shaman swag microdosing XOXO. Neutra biodiesel bespoke irony kinfolk la croix cold-pressed kale chips. Biodiesel 8-bit tbh flannel chia. Direct trade cornhole art party, selfies beard hashtag keytar venmo. Tattooed tbh intelligentsia blue bottle marfa brooklyn. 90's cornhole everyday carry try-hard.
+
+Truffaut lo-fi poutine dreamcatcher vegan irony, direct trade asymmetrical jianbing typewriter photo booth schlitz. Lo-fi hot chicken af taiyaki waistcoat. Pug PBR tbh stumptown williamsburg offal tattooed try-hard. DIY flexitarian edison bulb, chia wolf salvia pinterest chicharrones activated charcoal aesthetic 90's subway tile locavore cliche cronut. Truffaut ramps man bun microdosing selfies la croix mixtape. Mustache occupy celiac single-origin coffee. Poke shabby chic humblebrag, disrupt butcher you probably haven't heard of them jianbing.
+
+Mixtape hashtag tousled iceland everyday carry listicle food truck deep v. Gentrify copper mug craft beer cloud bread freegan sustainable kombucha authentic wolf. Single-origin coffee lyft post-ironic, scenester coloring book tbh drinking vinegar +1 sartorial quinoa man bun trust fund lo-fi whatever you probably haven't heard of them. Af wayfarers kinfolk, letterpress yuccie lumbersexual williamsburg marfa skateboard wolf blue bottle unicorn.
+
+\section{Data}
+
+Two data sets were used throughout this project. The first being bicycle counts at various intersections throughout Boulder and the second being daily weather data. The bicycle data is obtained from the City of Boulder website that has publicly available data that is updated regularly. The weather data is obtained from the National Oceanic and Atmospheric Administration(NOAA) website and is also updated regularly.
+
+The bicycle data includes the count of bikes observed at each intersection every 15 minutes. The intersections being observed are highly trafficked and capture many common routes in Boulder. Every intersection has data up until the current day and begin between 2011 and 2015. It is uncertain how the data is collected but it is believed to be a simple count of objects passing through each intersection's bicycle lane. This would capture other modes of transpiration such as skateboards or scooters but the vast majority of traffic in these lanes are bicycles.
+
+The weather data includes the daily temperature minimum and maximum, snow cover, and precipitation beginning in 1897. This information is updated on a monthly basis and comes directly from NOAA's observations here in Boulder.
+
+\section{Methods}
+
+To begin, plots were created to view bike counts grouped by day and month. The monthly counts showed a clear seasonal correlation while the daily count followed this trend in a more sporadic manner. The monthly counts remained mostly constant year after year though the total counts are rising slightly over the years. Due to the clear seasonal relation, the weather data was plotted next.  
+
+Daily temperature and monthly means were plotted to show a very consistent weather pattern. For the last 10 years the monthly means for low and high temperature has remained very consistent with only a few degrees of variation. When monthly means were plotted alongside monthly bicycle counts there was a clear visual correlation between the two. For the purposes of building a model, the Folsom \& BoulderCreek Path intersection was focused on for the longevity of the data(2011-present) and its importance as a major entry/exit point for the Boulder Creek Multi-Purpose Path.  
+
+Before a model could be built the bicycle count data had to be cleaned. The number of 0 counts was around 9.8\% over 8 years. When looking at the data the 0 counts could be observed to be grouped by days, often 3 or more in a row, and repeated monthly. This is mostly impossible in reality and most likely meant the counting mechanism was offline for some scheduled maintenance. For this reason all counts of 0(within the daily grouping) were removed. Furthermore the data had only 3 outliers and each were 4 or more standard deviations out. These dates did not appear to be any known holiday or event(i.e. Boulder bike to work day) and thus were removed. After these changes the skew for the Folsom \& BoulderCreek Path count was 0.47 and was not adjusted. The skew of the weather data(daily max) was -0.39 and was similarly not adjusted.  
+
+Next, a simple linear regression model was built using the daily temperature high. Daily high was used after observing the correlation table for the total and features: daily low, daily high, precipitation, snow, and snow cover. The null hypothesis, there is no correlation between weather and bicycle count, was safely rejected after receiving a p-value of 6.89e-67. The model has a room mean squared error of 347.57 and an R2 value of 0.16. Thus, the model does not perform as well as I would like and I will move forward with multiple linear regression using precipitation and snow cover. However, I don't suspect this model will perform significantly better given the correlation value of these features are 0.09 and 0.14 respectively.  
+
+(I may go into some more depth of MLR here but it did not as prove successful as I hoped)  
+
+Given the behaviour of the data time series analysis was the next step. When observing the auto correlation and partial auto correlation we can see clear seasonal trends, especially amongst the monthly counts.  
+
+\includegraphics[scale=0.3]{daily_ac.png}
+\includegraphics[scale=0.3]{monthly_ac.png}
+(all images need to be updated for readability)  
+
+
+Within the daily auto correlation there seems to be something affecting bike counts every ~30 days, each month. When looking at the monthly correlation there is a clear trend every 6 months, perhaps due to the changing of seasons. This suggests that time series forecasting will likely yield better results. FBprohpet was used for time series forecasting due to its versatility and customization options.
+
+\section{Results}
+
+(I still need to move some stuff from methods to here regarding regression.)  
+
+The goal is to predict bicycle activity in the near future, sub-daily, given previous observations. Initial hourly forecasting proved ineffective out of the box:  
+
+\includegraphics[scale=0.3]{hourly.png}
+
+Hourly bicycle traffic is heavily seasonal within a day with heavy traffic before and after work hours (include graph here, not sure where it went but I'm not just making this up...) This suggests that with more time and tweaking this model could prove to be successful by predicting base off of the previous hour or two. It will also be worth attempting this same predictions with a smaller time frame of 15 minute intervals if hourly is proved to be successful.  
+
+Next, daily bicycle traffic was modeled, yielding a more accurate model, but still much room for improvement. 
+
+\includegraphics[scale=0.3]{daily.png}
+
+As you can see, daily counts fluctuate quite dramatically making it hard to predict. The model was able to capture the daily trend throughout the year however the value range is less than 100 up to over 1200, thus creating an unhelpfully large range of predictions. Again, given more time and model adjustments this could prove to be more useful, however, sub-daily data may be even more helpful given how short the time range can be and how activity is clustered throughout a day.  
+
+Moving on to the monthly model, it proved far more successful than smaller scale predictions out of the box due to its simplicity. Here you can the confidence intervals are much smaller and are able to capture most of the data.  
+
+\includegraphics[scale=0.3]{month.png}
+
+While this model may prove helpful in predicting total bicycle traffic months are years into the future(given more data) that is not the goal of this research. This model may be worth tweaking and improving in the future but for now the focus is short term predictions for daily use.  
+
+(I have accuracy metrics such as MAPE and RMSE for each of these models but no visuals. I need more time with each to fully understand/talk about them. I also plan on going more in depth with each model and the decisions I made but currently do not have the performance to warrant that discussion at this time.)
+
+\section{Discussion and Conclusions}
+
+Lorem ipsum dolor amet offal bitters venmo 90's brunch thundercats synth messenger bag. Kombucha bespoke tumblr pabst. Seitan four loko hell of pabst, mustache meh shabby chic hella YOLO cardigan pok pok gluten-free vinyl iceland. Tumblr chicharrones vaporware, farm-to-table jianbing gochujang normcore woke kickstarter before they sold out activated charcoal dreamcatcher.
+
+Vape retro VHS PBR chartreuse readymade chambray gastropub artisan etsy organic la croix. VHS shabby chic squid kale chips lo-fi fashion axe green juice tofu affogato fam hella 8-bit gentrify. 90's ethical skateboard, listicle narwhal everyday carry taxidermy. Tumblr you probably haven't heard of them letterpress chia live-edge seitan literally iceland.
+
+%----------------------------------------------------------------------------------------
+% REFERENCE LIST
+%----------------------------------------------------------------------------------------
+
+\begin{thebibliography}{99} % Bibliography - this is intentionally simple in this template
+
+\bibitem[City of Boulder, 2019]{boulder2019}
+City of Boulder Bicycle Traffic Counts (2019) {\em https://bouldercolorado.gov/open-data/bicycle-traffic-counts/}
+
+\bibitem[NOAA, 2019]{noaa2019}
+NOAA Boulder Daily Data (2019). {\em https://www.esrl.noaa.gov/psd/boulder/getdata.html}
+
+\bibitem[Hyndman, R.J., Athanasopoulos, G, 2018]{Hyndman, R.J., Athanasopoulos, G, 2018}
+Forecasting: principles and practice, 2nd edition, OTexts: Melbourne, Australia. (2019) {\em OTexts.com/fpp2}
+
+
+\end{thebibliography}
+
+%----------------------------------------------------------------------------------------
+
+\end{multicols}
+
+\end{document}
