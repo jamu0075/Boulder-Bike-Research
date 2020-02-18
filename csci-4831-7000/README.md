@@ -1,8 +1,8 @@
 # Boulder Cyclist Research
 
-During my final semester at CU in the fall of 2019, I had to oportunity to participate in a graduate level course in which I could independently research a topic of my interest. My passion for biking and love for Boulder provided a great project for me to explore my interests while expanding my knowledge through self-teaching. Specifically, I wanted to better understand cyclist trends in Boulder while gaining experience with time series data and forecasting future traffic. Ultimately this research proved my ability to learn on the fly and confirmed my love for data. End results were published as a technical report via CU and can be found [here](https://scholar.colorado.edu/concern/reports/3j333305f). My individual report can be found under the 'paper' directory as [Research_Paper.pdf](https://github.com/jamu0075/Boulder-Bike-Research/blob/master/csci-4831-7000/paper/Research_Paper.pdf).
+During my final semester at CU in the fall of 2019, I had to oportunity to participate in a graduate level course in which I could independently research a topic of my interest. My passion for biking and love for Boulder provided a great project for me to explore my interests while expanding my knowledge through self-teaching. Specifically, I wanted to better understand cyclist trends in Boulder while gaining experience with time series data and forecasting future traffic. Ultimately this research proved my ability to learn on the fly and confirmed my love for data. End results were published as a technical report via CU and can be found [here](https://scholar.colorado.edu/concern/reports/3j333305f). My individual report can be found under the 'paper' directory as [Research_Paper.pdf](https://github.com/jamu0075/Boulder-Bike-Research/blob/master/csci-4831-7000/paper/Research_Paper.pdf). To get an overview of data preparation, analysis, and results, read through the report. All raw EDA and results can be found in the project directory, forecast_folsom_bouldercreek.ipynb being the basis for the report.
 
-All analysis for this project were compiled in Jupyter Notebooks for rapid ad-hoc development. Research tasks changed on a near daily basis and I wanted to be able to quickly compare and update analyses.
+All analysis for this project was compiled in Jupyter Notebooks for rapid ad-hoc development, found in the project directory. Research tasks changed on a near daily basis and I wanted to be able to quickly compare and update analyses.
 
 ## Data Collection
 
@@ -10,6 +10,6 @@ Data was collected via web scraping and a manual download from NOAA. All data co
 
 The biker data is updated every 15 minutes, each time the scraper script is run the most up to date data is retrieved. Weather data is updated on a semi-monthly basis and requires a manual download to update.
 
-Both cleaning scripts download a csv to your machine for the scope of this project. However, the data could just as easily have been put into a database for more logical access. The focus of this research was the analysis and did not require frequent updates to the data.
+Both cleaning scripts download a csv to your machine. This for the scope of this project, however, the data could just as easily have been put into a database for more logical access. The focus of this research was the analysis and did not require frequent updates to the data.
 
 After successfully running both cleaning scipts you should have all the csv's required to run the analysis notebooks.
